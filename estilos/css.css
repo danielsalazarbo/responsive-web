@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E4E4E4;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #45ABF9;
+    align-items: center;
+}
+.header-container{
+    max-width: 1000px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    flex: 1;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+header figure{
+    margin: 2px 0;
+}
+nav ol{
+    display: flex;
+    list-style: none;   
+}
+nav ol a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+/* aqui comienza el main */
+
+.main-container{
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    /* padding: 0 10px; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    background-image: url(../image/back.jpg);
+    background-size: 1000px;
+}
+.main-container h1{
+    margin: 7px;
+    max-width: 500px;
+    color: #393939;
+    text-align: center;
+}
+
+
+/* aqui empieza la cosecha */
+.cosecha-titleContainer{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #44839F;
+}
+.cosecha{
+    display: flex;
+}
+.cosecha-container{
+    max-width: 1000px;
+    display: 1;
+    margin: 0 auto;
+    display: inherit;
+    flex-wrap: wrap;
+}
+.cosecha-article{
+    background-color: #F1F1F1;
+    /* box-shadow: 5px 5px 10px #212829; */
+    /* border: 1px solid ; */
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #212829;
+    display: inherit;margin: 10px;
+    padding: 20px;
+}
+.cosecha-details{
+    width: 50%;
+}
+.cosecha-imageContainer{
+    width: 50%;
+    margin: 0;
+}
+.cosecha-image{
+    max-width: 100%;
+}
+
+
+/* aqui comienza los gatget */
+.gatget-titleFerst{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.gatget-titleFerst h3{
+    color: #44839F;
+    font-size: 33px;
+}
+.gatget{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gatget-container{
+    display: inherit;
+    flex-wrap: inherit;
+    justify-content: inherit;
+    max-width: 1000px;
+}
+.gatget-article{
+    /* border: 1px solid red;  */
+    margin: 20px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #1C6A6A;
+}
+.gatget-details{
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-top: -40px;
+    position: relative;
+    text-align: center;
+}
+.gatget-details a{
+    color: #21D6DC;
+    border: 2px solid #21D6DC;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.gatget-imageContainer{
+    margin: 0  ;
+}
+.gatget-imageContainer img{
+    height: 200px;
+    object-fit: cover;
+}
+/* aqui comienza el contacto */
+.contac{
+    background-color: #45ABF9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contac-container{
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    padding: 0 7px;
+}
+.contac form{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333436;
+}
+form p{
+    margin: 10px 0;
+}
+.contac button{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 3px 15px;
+}
+.contac input{
+    border-color: #646564;
+    border-style: solid;
+    height: 20px;
+}
+.contac-social img{
+    width: 50px;
+    margin: 15px;
+}
+
+
+/* aqui empieza el footer */
+footer{
+    background-color: #0C0C0C;
+}
+footer p{
+    text-align: center;
+    margin: 0;
+    color: white;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 768px){
+    .header-container img{
+        width: 45px;
+        height: 45px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .cosecha-article{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* .cosecha-details{
+        font-size: 16px;
+    }
+    .cosecha-details h2{
+        font-size: 2em;
+    }
+    .cosecha-details h6{
+        font-size: 1em;
+    } */
+    .cosecha-details p{
+        font-size: 16px;
+    }
+    .cosecha-details{
+        width: inherit;
+    }
+    .cosecha-imageContainer{
+        width: inherit;
+
+    }
+    .contac-container{
+        justify-content: center;
+    }
+    .contac-social figure{
+        text-align: center;
+
+    }
+
+
+}
+@media screen and (max-width: 425px){
+    nav ol{
+        padding: 0;
+    }
+    .gatget-article{
+        width: 300px;
+    }
+    .gatget-imageContainer{
+        width: 300px;
+        height: 100px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    nav ol a{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 320px){
+
+}
